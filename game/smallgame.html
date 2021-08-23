@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<form action="http://www.tmooc.cn">
+    <!--所有控件都要添加一个控件  占位文本placeholder maxlength最大字符长度-->
+    用户名：<input type="text" name="username" placeholder="请输入您的用户名" ><br>
+    <!--密码框的属性 checked属性默认选中，-->
+    密码：<input type="password" name="password" placeholder="请输入密码"><br>
+    性别: <input name="sex" type="radio" value="m" >男 <input name="sex" type="radio" value="f">女 <br>
+    <!--value指的是浏览器提交的是哪个选项-->
+    兴趣爱好：<input type="checkbox" name="habby" value="cy">抽烟
+    <input type="checkbox" name="habby" value="tt">烫头
+    <input type="checkbox" name="habby" value="hj">喝酒 <br>
+
+    生日：<input type="date" name="birthday"><br>
+    靓照：<input type="file" name="pic"><br>
+
+    <!--下拉选-->
+    所在城市:
+    <select name="city" id="">
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+        <option value="gz">广州</option>
+    </select><br>
+    <!-- 文本域cols表示一行字符数量，rows行数-->
+    个人介绍：<textarea name="intro" cols="30" rows="10" placeholder="说点什么。。。"></textarea><br>
+    <!--重置按钮-->
+    <input type="reset" value="重置"><br>
+    <!--自定义按钮 -->
+    <input type="button" value="按钮">
+    <input type="submit" value="注册"/>
+</form>
+</body>
+</html>
